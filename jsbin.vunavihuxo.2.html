@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2023 by anonymous (http://jsbin.com/vunavihuxo/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>Simulateur De Statut Bancaire
+<body>
+
+<script id="jsbin-javascript">
+var argent_s= prompt("C`est quoi votre argent dans votre savings");
+
+var interet_s= argent_s*1.067
+
+
+var argent_c= prompt("C`est quoi votre argent de votre de chequing");
+                    
+var interet_c = argent_c*1.067
+                 
+var argent= prompt("C`est quoi votre argent totale");
+
+var interet= argent*1.067
+
+window.alert("Votre interet de avec votre savings est" +" " + interet_s+"$");
+window.alert("Votre interet de votre chequing est"+ " " + interet_c+"$");
+window.alert("Votre interet de votre argent totale est"+" " +interet+"$");
+interet_s = Math.round(interet_s)
+interet_c = Math.round(interet_c)
+interet = Math.round(interet)
+
+ var credit_score= prompt("C`est quoi votre score de credit");
+
+if (credit_score<600){
+   console.log("Avec ton score tu va pas etre acccepter n'importe quel prêt")
+
+}else if (600<credit_score<750) {
+  window.alert("Tu peut etre vas etre accepter a des perte")
+}else if(750<credit_score){
+  window.alert("Tu vas etre accepter pour n`importe quel prét")
+}
+ 
+
+ 
+    
+</script>
+</body>
+</html>
